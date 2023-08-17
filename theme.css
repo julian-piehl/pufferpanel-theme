@@ -1,0 +1,85 @@
+:root {
+  /* --v-primary-base: #2563eb; */
+
+  --background-color: #0f172a;
+  --surface-color: #1f2937;
+}
+
+.container--fluid {
+  max-width: 1500px;
+}
+
+/* Login Page */
+.v-main__wrap {
+  display: flex;
+  align-items: center;
+}
+
+/* Show Background Image on Login Page */
+.v-application,
+.theme--dark.v-application:not(
+    :has(.v-application--wrap > .v-navigation-drawer)
+  ) {
+  background-image: url(https://starkesports.com/wp-content/uploads/2020/11/pexels-lucie-liz-3165335-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background other Pages */
+.v-application,
+.theme--dark.v-application {
+  background: var(--background-color);
+}
+
+/* Background Navbar */
+.v-toolbar__content {
+  background-color: var(--surface-color);
+}
+
+/* Background Sidebar */
+.v-navigation-drawer,
+.theme--dark.v-navigation-drawer {
+  background: var(--surface-color);
+}
+
+/* Background Cards */
+.theme--dark.v-card,
+.v-card {
+  background-color: var(--surface-color);
+}
+
+/* Background Tables */
+.v-sheet,
+.theme--dark.v-sheet {
+  background-color: var(--surface-color);
+}
+.v-data-table,
+.theme--dark.v-data-table {
+  background-color: var(--surface-color);
+}
+.v-data-table
+  > .v-data-table__wrapper
+  > table
+  > tbody
+  > tr:hover:not(.v-data-table__expanded__content):not(
+    .v-data-table__empty-wrapper
+  ),
+.theme--dark.v-data-table
+  > .v-data-table__wrapper
+  > table
+  > tbody
+  > tr:hover:not(.v-data-table__expanded__content):not(
+    .v-data-table__empty-wrapper
+  ) {
+  background: #374151;
+}
+
+/* gsdfgfg */
+.v-navigation-drawer__content {
+  padding: 0 0.75rem;
+}
+.v-navigation-drawer__content .v-list-item {
+  margin-top: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}

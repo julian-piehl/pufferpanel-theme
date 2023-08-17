@@ -1,0 +1,17 @@
+name: publish
+on: [push]
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Zip Files
+        shell: bash
+        run: tar -cf the-theme.tar theme.json theme.css
+      - name: Archive File
+        uses: actions/upload-artifact@v3
+        with:
+          name: the-theme
+          path: the-theme.tar
