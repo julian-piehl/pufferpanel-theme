@@ -1,5 +1,5 @@
 :root {
-  /* --v-primary-base: #2563eb; */
+  --v-primary-base: #2563eb;
 
   --background-color: #0f172a;
   --surface-color: #1f2937;
@@ -74,10 +74,12 @@
   background: #374151;
 }
 
-/* gsdfgfg */
-.v-navigation-drawer__content {
+/* Sidebar */
+.v-navigation-drawer:not(.v-navigation-drawer--mini-variant)
+  .v-navigation-drawer__content {
   padding: 0 0.75rem;
 }
+
 .v-navigation-drawer__content .v-list-item {
   margin-top: 8px;
   border-radius: 8px;
