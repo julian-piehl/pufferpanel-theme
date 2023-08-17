@@ -82,6 +82,10 @@
 
 .v-navigation-drawer__content .v-list-item {
   margin-top: 8px;
-  border-radius: 8px;
   overflow: hidden;
+}
+.v-navigation-drawer:not(.v-navigation-drawer--mini-variant)
+  .v-navigation-drawer__content
+  .v-list-item {
+  border-radius: 8px;
 }
